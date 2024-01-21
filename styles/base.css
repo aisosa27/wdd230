@@ -1,0 +1,63 @@
+body {
+  font-family: "Zen Kurenaido", sans-serif;
+  background-color: #F8AD9D;
+  padding: 10px;
+  line-height: 1.75em;
+  color: black;
+  margin: 8px;
+}
+
+header {
+  background: #FBC4AB;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 120px auto;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.name {
+  margin: auto;
+  text-align: center;
+  font-size: 3em;
+  font-style: italic;
+  font-weight: 800;
+  grid-row: 1;
+  grid-column: 2/4;
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr; 
+}
+
+section {
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
