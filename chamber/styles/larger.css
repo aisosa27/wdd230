@@ -1,0 +1,93 @@
+@media (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  
+    header {
+      padding: 30px;
+    }
+  
+    nav {
+      padding: 20px;
+    }
+  
+    nav li {
+      margin-right: 30px;
+    }
+  
+    footer {
+      padding: 30px;
+    }
+  
+    #hero {
+      height: 400px;
+    }
+  
+    #hero img {
+      height: 100%;
+    }
+  
+    #hero h2 {
+      font-size: 36px;
+    }
+  
+    #cta a {
+      padding: 15px 30px;
+    }
+  
+    /* Card Styles */
+    .event-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .event-card,
+    .weather-card,
+    .spotlight-card {
+      flex: 1;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      margin-right: 10px; /* Adjust margin as needed */
+    }
+  
+    .spotlight-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; /* Center the title */
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+  
+    .spotlight-card {
+      width: 100%; /* Make each card take full width */
+      max-width: 300px; /* Set maximum width for better layout */
+      margin: 0 10px 20px; /* Adjust margin as needed */
+    }
+  
+    /* Side-by-side layout for current events and weather forecast */
+    #events,
+    #weather {
+      flex: 1; /* Make both sections take equal width */
+      margin-right: 10px; /* Adjust margin as needed */
+    }
+  
+    #events,
+    #weather,
+    #spotlights {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    @media (max-width: 768px) {
+      #events,
+      #weather {
+        margin-right: 0; /* Reset margin for smaller screens */
+      }
+    }
+  }
+  

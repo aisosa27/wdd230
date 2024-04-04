@@ -1,0 +1,129 @@
+@import url("normalize.css");
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fefae0;
+  color: #000000;
+}
+
+header {
+  background-color: #faedcd;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #d4a373;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+footer {
+  background-color: #faedcd;
+  padding: 20px;
+  text-align: center;
+}
+
+#hero {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#hero h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 24px;
+}
+
+#cta {
+  text-align: center;
+}
+
+#cta a {
+  display: inline-block;
+  background-color: #d4a373;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+#cta a:hover {
+  background-color: #b1874a;
+}
+
+/* Card Styles */
+.event-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+  }
+  
+  .event-card,
+  .weather-card {
+    flex: 0 0 calc(50% - 10px); /* Set width to 50% of the container width with spacing */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust margin between cards */
+  .event-card {
+    margin-right: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .event-card,
+    .weather-card {
+      flex: 0 0 100%; /* Set width to 100% for smaller screens */
+      margin-right: 0; /* Remove margin between cards on smaller screens */
+    }
+  }
+  
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Reset margin for smaller screens */
+  .event-card,
+  .weather-card {
+    margin-right: 0;
+    flex: 0 0 100%; /* Full width on smaller screens */
+  }
+}
