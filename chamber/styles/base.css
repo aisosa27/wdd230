@@ -1,9 +1,10 @@
 @import url("normalize.css");
+
 /* Global Styles */
 body {
   font-family: "Arial", sans-serif;
   background-color: #fefae0;
-  color: #000000; /* Set text color to black */
+  color: #000000;
 }
 
 header, nav, footer {
@@ -14,7 +15,7 @@ header, nav, footer {
 nav {
   background-color: #d4a373;
   padding: 10px;
-  color: white; /* Set text color to black */
+  color: #000000;
 }
 
 nav ul {
@@ -24,11 +25,11 @@ nav ul {
 }
 
 nav a {
-  color: white; /* Set link color to black */
+  color: #000000;
 }
 
 nav a:hover {
-  color: #b1874a; /* Change the color of the links on hover (optional) */
+  color: #b1874a;
 }
 
 nav li {
@@ -39,7 +40,6 @@ nav li {
 footer {
   background-color: #faedcd;
 }
-
 
 #hero {
   position: relative;
@@ -91,26 +91,22 @@ footer {
 }
 
 .event-card, .weather-card, .spotlight-card {
-  flex: 0 0 calc(50% - 10px); /* Set width to 50% of the container width with spacing */
-  margin-right: 10px; /* Adjust margin as needed */
+  flex: 0 0 calc(50% - 10px);
+  margin-right: 10px;
 }
 
-/* Adjust margin between cards */
 .event-card {
   margin-right: 10px;
 }
 
-/* Center the h2 and h3 in the events section */
 #events h2, #events h3 {
   text-align: center;
 }
 
-/* Center the h2 in the weather section */
 #weather h2 {
   text-align: center;
 }
 
-/* Center the h2 and h3 in the spotlights section */
 #spotlights h2, #spotlights h3 {
   text-align: center;
 }
@@ -118,24 +114,23 @@ footer {
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 5px; /* Adjust gap as needed */
+  gap: 5px;
 }
 
 .calendar-cell {
-  width: 30px; /* Adjust width as needed */
-  height: 30px; /* Ensure square shape */
+  width: 30px;
+  height: 30px;
   text-align: center;
-  line-height: 30px; /* Center text vertically */
-  background-color: #FAEDCD; /* Primary color */
-  color: #000; /* Text color */
+  line-height: 30px;
+  background-color: #FAEDCD;
+  color: #000;
 }
 
 .current-day {
-  background-color: #FFD700; /* Highlight current day */
+  background-color: #FFD700;
 }
 
 .empty-cell {
-  /* Style for empty cells before the start of the month */
   background-color: #e0e0e0;
 }
 
@@ -149,10 +144,8 @@ footer {
     display: block;
   }
 
-  /* Reset margin for smaller screens */
   .event-card, .weather-card, .spotlight-card {
     margin-right: 0;
-    flex: 0 0 100%; /* Full width on smaller screens */
+    flex: 0 0 100%;
   }
 }
-

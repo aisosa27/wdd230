@@ -25,4 +25,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // Store current visit date in localStorage
     localStorage.setItem("lastVisit", currentDate);
   });
-  
+
+// Get all image elements
+const images = document.querySelectorAll('.lazy');
+
+// Loop through each image element
+images.forEach(image => {
+  // Get the data-src attribute value
+  const src = image.getAttribute('data-src');
+  // Set the src attribute to trigger lazy loading
+  image.setAttribute('src', src);
+});
