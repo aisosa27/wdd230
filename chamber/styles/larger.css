@@ -172,3 +172,16 @@ main {
     transition: transform 0.3s ease;
   }
 }
+
+/* Stacking elements on small screens */
+@media (max-width: 768px) {
+  .spotlight-container,
+  .container,
+  .image-container,
+  .event-container,
+  .weather-card,
+  .spotlight-card {
+    display: block;
+    width: 100%;
+  }
+}
