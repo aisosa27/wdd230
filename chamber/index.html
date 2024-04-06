@@ -22,13 +22,12 @@
     content="https://aisosa27.github.io/wdd230/chamber/"
   />
   <link rel="icon" href="images/chamberfavicon.jpeg" type="image/jpeg" />
-  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="styles/normalize.css" />
 
   <link rel="stylesheet" href="styles/base.css" />
  
   <link rel="stylesheet" href="styles/larger.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-F9Gmwa5Vt0kD1ZLWwPZtHVfk73v1PAXVcwmItZcPN07Lf4Ojm9XuI5Nbo8wIb/YSeYwqefm7lCOwd9VGqbo/nA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="getDates.js"></script>
+  
  
 </head>
 <body>
@@ -40,8 +39,8 @@
   <nav>
     
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Discover</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
       <li><a href="#">Directory</a></li>
       <li><a href="#">Join</a></li>
     </ul>
@@ -62,7 +61,8 @@
       </p>
       <a href="#" class="cta-button">Join Us</a>
     </section>
-    <section id="events">
+    <div class="container" id="events-weather-spotlights-container">
+      <section id="events">
         <h2>Current Events</h2>
         <div class="event-container">
           <div class="event-card">
@@ -74,7 +74,7 @@
           <!-- Add more event cards here -->
         </div>
       </section>
-      
+    
       <section id="weather">
         <h2>Weather Forecast</h2>
         <div class="weather-card">
@@ -83,9 +83,7 @@
           <p>Wind Speed: 10 mph</p>
         </div>
       </section>
-      
-      
-      
+    
       <section id="spotlights">
         <h2>Spotlights</h2>
         <div class="spotlight-container">
@@ -106,6 +104,9 @@
           </div>
         </div>
       </section>
+    </div>
+  
+        
   </main>
 
   <footer>
@@ -120,18 +121,10 @@
           <h3>Additional Information</h3>
           <p>Developed by: Doubra Daunemigha</p>
           <p>Course: WDD 230 - Web Frontend Development</p>
-          <p>Last Modified: <span id="lastModified"></span></p>
-        </div>
-        <div class="social-media">
-          <h3>Follow Us</h3>
-          <ul class="social-icons">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
+          <p id="lastModified"></p>
         </div>
       </footer>
-      
+      <script src="scripts/getDates.js"></script>
 </body>
 </html>
 

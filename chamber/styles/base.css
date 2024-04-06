@@ -1,13 +1,12 @@
 @import url("normalize.css");
-
+/* Global Styles */
 body {
   font-family: "Arial", sans-serif;
   background-color: #fefae0;
-  color: #000000;
+  color: #000000; /* Set text color to black */
 }
 
-header {
-  background-color: #faedcd;
+header, nav, footer {
   padding: 20px;
   text-align: center;
 }
@@ -15,7 +14,7 @@ header {
 nav {
   background-color: #d4a373;
   padding: 10px;
-  text-align: center;
+  color: white; /* Set text color to black */
 }
 
 nav ul {
@@ -24,20 +23,23 @@ nav ul {
   padding: 0;
 }
 
+nav a {
+  color: white; /* Set link color to black */
+}
+
+nav a:hover {
+  color: #b1874a; /* Change the color of the links on hover (optional) */
+}
+
 nav li {
   display: inline-block;
   margin-right: 20px;
 }
 
-.hamburger-menu {
-  display: none;
-}
-
 footer {
   background-color: #faedcd;
-  padding: 20px;
-  text-align: center;
 }
+
 
 #hero {
   position: relative;
@@ -80,36 +82,63 @@ footer {
 }
 
 /* Card Styles */
-.event-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
-    justify-content: space-between; /* Distribute items evenly along the main axis */
-  }
-  
-  .event-card,
-  .weather-card {
-    flex: 0 0 calc(50% - 10px); /* Set width to 50% of the container width with spacing */
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  /* Adjust margin between cards */
-  .event-card {
-    margin-right: 10px;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .event-card,
-    .weather-card {
-      flex: 0 0 100%; /* Set width to 100% for smaller screens */
-      margin-right: 0; /* Remove margin between cards on smaller screens */
-    }
-  }
-  
+.event-container, .weather-card, .spotlight-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.event-card, .weather-card, .spotlight-card {
+  flex: 0 0 calc(50% - 10px); /* Set width to 50% of the container width with spacing */
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+/* Adjust margin between cards */
+.event-card {
+  margin-right: 10px;
+}
+
+/* Center the h2 and h3 in the events section */
+#events h2, #events h3 {
+  text-align: center;
+}
+
+/* Center the h2 in the weather section */
+#weather h2 {
+  text-align: center;
+}
+
+/* Center the h2 and h3 in the spotlights section */
+#spotlights h2, #spotlights h3 {
+  text-align: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px; /* Adjust gap as needed */
+}
+
+.calendar-cell {
+  width: 30px; /* Adjust width as needed */
+  height: 30px; /* Ensure square shape */
+  text-align: center;
+  line-height: 30px; /* Center text vertically */
+  background-color: #FAEDCD; /* Primary color */
+  color: #000; /* Text color */
+}
+
+.current-day {
+  background-color: #FFD700; /* Highlight current day */
+}
+
+.empty-cell {
+  /* Style for empty cells before the start of the month */
+  background-color: #e0e0e0;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   nav ul {
@@ -121,9 +150,9 @@ footer {
   }
 
   /* Reset margin for smaller screens */
-  .event-card,
-  .weather-card {
+  .event-card, .weather-card, .spotlight-card {
     margin-right: 0;
     flex: 0 0 100%; /* Full width on smaller screens */
   }
 }
+

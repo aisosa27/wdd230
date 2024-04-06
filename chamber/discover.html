@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Doubra Daunemigha - WDD 230 - Web Frontend Development - Baltimore Chamber
+    of Commerce
+  </title>
+  <meta
+    name="description"
+    content="Explore Baltimore's vibrant business community, cultural heritage, and economic development initiatives with Doubra Daunemigha in WDD 230 - Web Frontend Development. Join us at the Baltimore Chamber of Commerce and discover opportunities for networking, entrepreneurship, and community engagement."
+  />
+  <meta
+    property="og:title"
+    content="Doubra Daunemigha - WDD 230 - Web Frontend Development - Baltimore Chamber of Commerce"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/chamberimage.png" />
+  <meta
+    property="og:url"
+    content="https://aisosa27.github.io/wdd230/chamber/"
+  />
+  <link rel="icon" href="images/chamberfavicon.jpeg" type="image/jpeg" />
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-F9Gmwa5Vt0kD1ZLWwPZtHVfk73v1PAXVcwmItZcPN07Lf4Ojm9XuI5Nbo8wIb/YSeYwqefm7lCOwd9VGqbo/nA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <header>
+    <h1>Baltimore Chamber of Commerce</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="#">Directory</a></li>
+      <li><a href="#">Join</a></li>
+    </ul>
+  </nav>
+  <main id="main-content">
+    <div class="container">
+      <div class="left-column">
+        
+        <div class="card">
+          <h2 class="title">Baltimore, MD Population Pyramid</h2>
+          <div class="demographics">
+            
+            <img src="images/demographic.jpg" alt="Population Pyramid">
+            <div class="demographics-info">
+              <h3>Facts:</h3>
+              <ul>
+                <li>Population under 18: 121,556 (20.53% of total)</li>
+                <li>Population aged 65 and above: 83,631 (14.12% of total)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="calendar-card">
+            <div class="calendar">
+              <h2 class="title">Calendar</h2>
+              <h3 id="currentMonth"></h3>
+              <div class="calendar-grid" id="calendar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="title">Local Photos of Interest</h2>
+        </div>
+      </div>
+    
+      <div class="right-column">
+        <div class="image-gallery">
+          
+          <div class="image-container">
+        
+            <div class="image">
+              <img src="images/food.jpg" alt="Seafood Boil">
+              <p>Classic seafood boil with crab and other seafood.</p>
+            </div>
+            <div class="image">
+              <img src="images/druid.jpg" alt="Druid Hill Park">
+              <p>Druid Hill Park showcasing lush greenery, tranquil ponds, and winding paths.</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="image">
+              <img src="images/book.jpg" alt="Baltimore Book Festival">
+              <p>Baltimore Book Festival featuring rows of book stalls.</p>
+            </div>
+            <div class="image">
+              <img src="images/fort.jpg" alt="Fort McHenry">
+              <p>Fort McHenry National Monument and Historic Shrine.</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="image">
+              <img src="images/inner.jpg" alt="Inner Harbor">
+              <p>Inner Harbor.</p>
+            </div>
+            <div class="image">
+              <img src="images/chesapeaketown.jpg" alt="Chesapeake Bay">
+              <p>Town near Chesapeake Bay.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+  
+  
+  
+  
+  <footer>
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p>Address: 123 Main Street, Baltimore, MD</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: lorem@ipsum.com</p>
+    </div>
+    <div class="additional-info">
+      <h3>Additional Information</h3>
+      <p>Developed by: Doubra Daunemigha</p>
+      <p>Course: WDD 230 - Web Frontend Development</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+
+  </footer>
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/sidebar.js"></script>
+  <script src="scripts/calendar.js"></script>
+</body>
+</html>
