@@ -90,10 +90,10 @@
       <section id="weather">
         <h2>Weather Forecast</h2>
         <div class="weather-card">
-          <p>Today's Weather: Sunny</p>
-          <p>Temperature: 75°F</p>
-          <p>Wind Speed: 10 mph</p>
+          <div id="current-weather"></div>
+          <div id="forecast-info"></div>
         </div>
+
       </section>
     </div>
       <section id="spotlights">
@@ -122,7 +122,13 @@
           </div>
         </div>
       </section>
-   
+      <section id="meet-greet-banner" style="display: none;">
+        <div id="banner" class="banner">
+          <span class="close" onclick="closeBanner()">&times;</span>
+          <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+        </div>
+      </section>
+      
   
         
   </main>
