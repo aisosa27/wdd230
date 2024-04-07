@@ -223,3 +223,33 @@ main {
 .dark-mode .spotlight-link:hover {
   color: #b1874a;
 }
+
+
+
+/* Thank You Page Styles for Larger Views */
+.thank-you-container {
+  max-width: 800px;
+}
+
+.thank-you-container h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.thank-you-container p {
+  font-size: 20px;
+}
+
+/* Join Page Styles for Larger Views */
+.join-container {
+  max-width: 1000px;
+}
+
+.join-container h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.join-container form {
+  max-width: 500px;
+}

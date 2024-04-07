@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Doubra Daunemigha - WDD 230 - Web Frontend Development - Baltimore Chamber
+    of Commerce
+  </title>
+  <meta
+    name="description"
+    content="Explore Baltimore's vibrant business community, cultural heritage, and economic development initiatives with Doubra Daunemigha in WDD 230 - Web Frontend Development. Join us at the Baltimore Chamber of Commerce and discover opportunities for networking, entrepreneurship, and community engagement."
+  />
+  <meta
+    property="og:title"
+    content="Doubra Daunemigha - WDD 230 - Web Frontend Development - Baltimore Chamber of Commerce"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/chamberimage.png" />
+  <meta
+    property="og:url"
+    content="https://aisosa27.github.io/wdd230/chamber/"
+  />
+  <link rel="icon" href="images/chamberfavicon.jpeg" type="image/jpeg" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+
+  <link rel="stylesheet" href="styles/base.css" />
+ 
+  <link rel="stylesheet" href="styles/larger.css" />
+  
+ 
+</head>
+<body>
+  <header>
+    
+    <h1>Baltimore Chamber of Commerce</h1>
+  </header>
+
+  <nav>
+    
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="#">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  </nav>
+ 
+  <section id="hero">
+    <img src="images/hero-image.jpeg" alt="Hero Image">
+    <h2>Welcome to Baltimore Chamber of Commerce</h2>
+</section>
+  <main id="membership-form">
+    
+    <section class="membership-section">
+      <div class="membership-container">
+        <div class="membership-level">
+            <h3>NP Membership</h3>
+            <p>Cost: Free</p>
+            <ul>
+            <li>Access to special events</li>
+            <li>Discounted advertising opportunities</li>
+            <li>Networking opportunities</li>
+            <li>Community engagement initiatives</li>
+            </ul>
+            </div>
+            <div class="membership-level">
+            <h3>Bronze Membership</h3>
+            <p>Cost: $50/year</p>
+            <ul>
+            <li>Access to special events</li>
+            <li>Basic training sessions</li>
+            <li>Limited advertising opportunities</li>
+            <li>Networking opportunities</li>
+            <li>Community engagement initiatives</li>
+            </ul>
+            </div>
+            <div class="membership-level">
+            <h3>Silver Membership</h3>
+            <p>Cost: $100/year</p>
+            <ul>
+            <li>Access to special events</li>
+            <li>Advanced training sessions</li>
+            <li>Enhanced advertising opportunities</li>
+            <li>Priority networking opportunities</li>
+            <li>Community engagement initiatives</li>
+            </ul>
+            </div>
+            <div class="membership-level">
+            <h3>Gold Membership</h3>
+            <p>Cost: $200/year</p>
+            <ul>
+            <li>VIP access to special events</li>
+            <li>Premium training sessions</li>
+            <li>Premier advertising opportunities</li>
+            <li>Exclusive networking opportunities</li>
+            <li>Community engagement initiatives</li>
+            </ul>
+            </div>
+      </div>
+    </section>
+    <section class="form-section">
+      <div class="form-container">
+        <form action="thankyou.html" method="get">
+            <label for="fname">Applicant's First Name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="lname">Applicant's Last Name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+            <label for="position">Applicant's Title/Position:</label>
+            <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" title="Please enter a valid title or position" required><br><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+            <label for="phone">Mobile Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <label for="orgname">Business/Organization's Name:</label>
+            <input type="text" id="orgname" name="orgname" required><br><br>
+            <label for="membership">Membership Level:</label>
+            <select id="membership" name="membership" required>
+            <option value="NP Membership">NP Membership</option>
+            <option value="Bronze Membership">Bronze Membership</option>
+            <option value="Silver Membership">Silver Membership</option>
+            <option value="Gold Membership">Gold Membership</option>
+            </select><br><br>
+            <label for="description">Business/Organization's Description:</label><br>
+            <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+            <button type="submit">Submit</button>
+            
+        </form>
+      </div>
+    </section>
+  </main>
+  
+          
+  
+  
+
+  <footer>
+    <footer>
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+          <p>Address: 123 Main Street, Baltimore, MD</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Email: lorem@ipsum.com</p>
+        </div>
+        <div class="additional-info">
+          <h3>Additional Information</h3>
+          <p>Developed by: Doubra Daunemigha</p>
+          <p>Course: WDD 230 - Web Frontend Development</p>
+          <p id="lastModified"></p>
+        </div>
+      </footer>
+      <script src="scripts/getDates.js"></script>
+      <script src="darkmode.js"></script>
+ 
+</body>
+</html>
+
