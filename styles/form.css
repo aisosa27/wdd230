@@ -1,0 +1,98 @@
+/* Add your CSS styles here */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --border-radius: 5px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #000000;
+    background-color: #FAEDCD;
+  }
+  
+  header img {
+    margin-right: 10px;
+    max-width: 100px;
+    box-shadow: 5px 5px 2.5px #2a2929;
+    align-items: center;
+  }
+  
+  nav {
+    background-color: #D4A373;
+    display: flex; /* added */
+    justify-content: center; /* added */
+  }
+  
+  nav a {
+    color: #050505;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  nav a:hover { /* added */
+    background-color: #E9EDC9;
+  }
+  
+ /* Add your CSS styles here */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --border-radius: 5px;
+  }
+  
+  form {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+  }
+  
+  input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+  
+ 
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #FAEDCD;
+    margin-top: 20px;
+    color: #000000;
+  }
+  

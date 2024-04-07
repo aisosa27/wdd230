@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Doubra Daunemigha" />
+  <meta name="description" content="Doubra Daunemigha - WDD 230 - Web Frontend Development - Course Assignment Portal" />
+  <title>Doubra Daunemigha - WDD 230 - Web Frontend Development</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=serif" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+  <header>
+    <h1>
+      <img src="img/me.jpeg" alt="profile-pic" />
+      <span class="name">Doubra Daunemigha</span>
+    </h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="chamber">Chamber</a>
+    <a href="./week01/chamber-site-plan.html">Site Plan</a>
+    <a href="form.html">Form</a>
+  </nav>
+
+  <form action="record.html" method="get">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required />
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" title="Please enter a valid email address"/>
+
+    <label for="rating">Page Rating:</label>
+    <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="ratingValue.value = rating.value" />
+    <output name="ratingValue">5</output>
+
+    <input type="submit" value="Submit" />
+  </form>
+
+  <footer>
+    <p>© <span id="copyrightYear"></span> | Doubra Daunemigha | USA🇺🇸 | NG🇳🇬</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/index.js"></script>
+  <script src="scripts/getDates.js"></script>
+</body>
+</html>
