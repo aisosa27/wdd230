@@ -78,3 +78,38 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
+/* Ensure image doesn't violate intrinsic aspect ratio */
+.hero-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Position Overlay Text */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 24px;
+}
+
+/* Lazy Loading for Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+iframe[loading="lazy"] {
+  display: block;
+  margin: 0 auto;
+}
+
