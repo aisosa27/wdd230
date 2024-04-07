@@ -1,38 +1,37 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Retrieve last visit date from localStorage
-    var lastVisit = localStorage.getItem("lastVisit");
+// Function to calculate the difference between two dates in days
+function daysBetweenDates(date1, date2) {
+  const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+  const diffDays = Math.round(Math.abs((date1 - date2) / oneDay));
+  return diffDays;
+}
+
+// Function to display appropriate message based on visit time
+function displayVisitMessage() {
+  const welcomeMessage = "Welcome! Let us know if you have any questions.";
+  const backSoonMessage = "Back so soon! Awesome!";
+  const localStorageKey = "lastVisitDate";
+  const sidebar = document.getElementById("sidebar");
   
-    // Get current date
-    var currentDate = new Date().getTime();
-  
-    // If this is the user's first visit
-    if (!lastVisit) {
-      document.querySelector(".sidebar h2").textContent = "Welcome! Let us know if you have any questions.";
+  // Retrieve last visit date from localStorage
+  const lastVisitDate = localStorage.getItem(localStorageKey);
+
+  if (!lastVisitDate) {
+    sidebar.textContent = welcomeMessage;
+  } else {
+    const today = new Date();
+    const daysSinceLastVisit = daysBetweenDates(today, new Date(lastVisitDate));
+
+    if (daysSinceLastVisit < 1) {
+      sidebar.textContent = backSoonMessage;
     } else {
-      // Calculate time difference between visits
-      var timeDiff = currentDate - lastVisit;
-      var diffDays = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-  
-      // Update sidebar message based on time difference
-      if (diffDays === 0) {
-        document.querySelector(".sidebar h2").textContent = "Back so soon! Awesome!";
-      } else {
-        var message = (diffDays === 1) ? "day" : "days";
-        document.querySelector(".sidebar h2").textContent = "You last visited " + diffDays + " " + message + " ago.";
-      }
+      const daysMessage = daysSinceLastVisit === 1 ? "day" : "days";
+      sidebar.textContent = "You last visited " + daysSinceLastVisit + " " + daysMessage + " ago.";
     }
-  
-    // Store current visit date in localStorage
-    localStorage.setItem("lastVisit", currentDate);
-  });
+  }
 
-// Get all image elements
-const images = document.querySelectorAll('.lazy');
+  // Store current visit date in localStorage
+  localStorage.setItem(localStorageKey, new Date().toISOString());
+}
 
-// Loop through each image element
-images.forEach(image => {
-  // Get the data-src attribute value
-  const src = image.getAttribute('data-src');
-  // Set the src attribute to trigger lazy loading
-  image.setAttribute('src', src);
-});
+// Call function to display message when the page loads
+displayVisitMessage();
