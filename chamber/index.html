@@ -44,6 +44,7 @@
       <li><a href="#">Directory</a></li>
       <li><a href="#">Join</a></li>
     </ul>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
   </nav>
 
   <main>
@@ -61,17 +62,28 @@
       </p>
       <a href="#" class="cta-button">Join Us</a>
     </section>
-    <div class="container" id="events-weather-spotlights-container">
+    <div class="container" id="events-weather-container">
       <section id="events">
         <h2>Current Events</h2>
         <div class="event-container">
           <div class="event-card">
-            <h3>Event Title 1</h3>
-            <p>Date: January 1, 2025</p>
-            <p>Location: Baltimore</p>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Charm City Jazz Festival</h3>
+            <p>Date: April 15, 2025</p>
+            <p>Location: Inner Harbor Amphitheater</p>
+            <p>Description: Experience the smooth sounds of jazz as renowned musicians take the stage against the backdrop of Baltimore's picturesque Inner Harbor. Food trucks and local vendors will be on hand to provide refreshments and unique crafts. Don't miss this unforgettable evening of music and culture!</p>
           </div>
-          <!-- Add more event cards here -->
+          <div class="event-card">
+            <h3>Baltimore Seafood Festival</h3>
+            <p>Date: July 20, 2025</p>
+            <p>Location: Fells Point Waterfront</p>
+            <p>Description: Dive into a seafood lover's paradise at the Baltimore Seafood Festival! Sample a delectable array of fresh crabs, oysters, shrimp, and more, sourced directly from the Chesapeake Bay. Enjoy live music, cooking demonstrations, and family-friendly activities along the historic Fells Point waterfront.</p>
+          </div>
+          <div class="event-card">
+            <h3>Baltimore Craft Beer Festival</h3>
+            <p>Date: September 8, 2025</p>
+            <p>Location: M&T Bank Stadium Parking Lot</p>
+            <p>Description: Raise a glass to Baltimore's thriving craft beer scene at the annual Baltimore Craft Beer Festival. Savor unique brews from local breweries and beyond, paired with delicious food from gourmet food trucks. Live music and games create a lively atmosphere for beer enthusiasts and casual drinkers alike!</p>
+          </div>
         </div>
       </section>
     
@@ -83,28 +95,34 @@
           <p>Wind Speed: 10 mph</p>
         </div>
       </section>
-    
+    </div>
       <section id="spotlights">
-        <h2>Spotlights</h2>
+        <h2>Company Spotlights</h2>
         <div class="spotlight-container">
           <div class="spotlight-card">
-            <h3>Company Name 1</h3>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Crab Shack Delights</h3>
+            <p>Description: Indulge in the taste of Maryland with Crab Shack Delights, a family-owned restaurant serving up the freshest Chesapeake Bay seafood. From succulent steamed crabs to mouthwatering crab cakes, our menu celebrates the flavors of Baltimore's culinary heritage.</p>
+            <p>Phone: 555-555-5555</p>
+            <p>Email: info@crabshackdelights.com</p>
             <a href="#" class="spotlight-link">Learn More</a>
           </div>
           <div class="spotlight-card">
-            <h3>Company Name 2</h3>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Baltimore Brews & Co.</h3>
+            <p>Description: Dive into Baltimore's rich brewing tradition with Baltimore Brews & Co. Our brewery crafts small-batch, handcrafted beers inspired by the city's vibrant culture. From hoppy IPAs to smooth stouts, each sip is a taste of Charm City.</p>
+            <p>Phone: 555-555-5555</p>
+            <p>Email: info@baltimorebrewsandco.com</p>
             <a href="#" class="spotlight-link">Learn More</a>
           </div>
           <div class="spotlight-card">
-            <h3>Company Name 3</h3>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>HonTown Charm Boutique</h3>
+            <p>Description: Discover unique Baltimore-inspired fashion and gifts at HonTown Charm Boutique. Our curated collection celebrates the city's iconic Hon culture, offering retro-chic apparel, locally-made jewelry, and one-of-a-kind souvenirs that capture the spirit of Baltimore.</p>
+            <p>Phone: 555-555-5555</p>
+            <p>Email: info@hontowncharm.com</p>
             <a href="#" class="spotlight-link">Learn More</a>
           </div>
         </div>
       </section>
-    </div>
+   
   
         
   </main>
@@ -125,6 +143,7 @@
         </div>
       </footer>
       <script src="scripts/getDates.js"></script>
+      <script src="darkmode.js"></script>
  
 </body>
 </html>
