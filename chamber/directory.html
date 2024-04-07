@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Doubra Daunemigha - WDD 230 - Web Frontend Development - Baltimore Chamber
+    of Commerce
+  </title>
+  <meta
+    name="description"
+    content="Explore Baltimore's vibrant business community, cultural heritage, and economic development initiatives with Doubra Daunemigha in WDD 230 - Web Frontend Development. Join us at the Baltimore Chamber of Commerce and discover opportunities for networking, entrepreneurship, and community engagement."
+  />
+  <meta
+    property="og:title"
+    content="Doubra Daunemigha - WDD 230 - Web Frontend Development - Baltimore Chamber of Commerce"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/chamberimage.png" />
+  <meta
+    property="og:url"
+    content="https://aisosa27.github.io/wdd230/chamber/"
+  />
+  <link rel="icon" href="images/chamberfavicon.jpeg" type="image/jpeg" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+</head>
+<body>
+  <header>
+    <h1>Baltimore Chamber of Commerce</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  </nav>
+
+  <div class="menu">
+    <button id="grid">⏹️ Grid</button>
+    <button id="list">📄 List</button>
+</div>
+<hr>
+<article id="members-container" class="grid">
+    <!-- Member information will be dynamically inserted here -->
+</article>
+  
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p>Address: 123 Main Street, Baltimore, MD</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: lorem@ipsum.com</p>
+    </div>
+    <div class="additional-info">
+      <h3>Additional Information</h3>
+      <p>Developed by: Doubra Daunemigha</p>
+      <p>Course: WDD 230 - Web Frontend Development</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+  <script src="scripts/getDates.js"></script>
+  <script src="darkmode.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const gridButton = document.querySelector("#grid");
+    const listButton = document.querySelector("#list");
+    const membersContainer = document.querySelector("#members-container");
+
+    // Function to fetch and display members
+    async function fetchMembers() {
+        try {
+            const response = await fetch("data/members.json");
+            const data = await response.json();
+
+            // Clear existing member cards
+            membersContainer.innerHTML = "";
+
+            // Loop through each member and create HTML elements
+            data.members.forEach(member => {
+                const memberSection = document.createElement("section");
+                memberSection.innerHTML = `
+                    <img src="${member.image}" alt="${member.name}" />
+                    <h3>${member.name}</h3>
+                    <p>${member.address}</p>
+                    <p>${member.phone}</p>
+                    <p><a href="${member.website}" target="_blank">Website</a></p>
+                    <p>Membership Level: ${member.membership_level}</p>
+                    <p>${member.other_information}</p>
+                `;
+                membersContainer.appendChild(memberSection);
+            });
+        } catch (error) {
+            console.error("Error fetching member data:", error);
+        }
+    }
+
+    // Event listeners for grid and list buttons
+    gridButton.addEventListener("click", () => {
+        membersContainer.classList.remove("list");
+        membersContainer.classList.add("grid");
+    });
+
+    listButton.addEventListener("click", () => {
+        membersContainer.classList.remove("grid");
+        membersContainer.classList.add("list");
+    });
+
+    // Fetch members when the page loads
+    fetchMembers();
+});
+
+  </script>
+</body>
+</html>

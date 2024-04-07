@@ -1,0 +1,87 @@
+{
+    "members": [
+      {
+        "name": "ABC Corporation",
+        "address": "123 Main Street, Baltimore, MD",
+        "phone": "(555) 123-4567",
+        "website": "https://www.abccorp.com",
+        "image": "abc_corp_logo.jpg",
+        "membership_level": "Gold",
+        "other_information": "Leading provider of innovative solutions in the tech industry."
+      },
+      {
+        "name": "XYZ Enterprises",
+        "address": "456 Elm Street, Baltimore, MD",
+        "phone": "(555) 234-5678",
+        "website": "https://www.xyzenterprises.com",
+        "image": "xyz_logo.jpg",
+        "membership_level": "Silver",
+        "other_information": "Provider of high-quality products and services in the manufacturing sector."
+      },
+      {
+        "name": "Smith & Sons Construction",
+        "address": "789 Oak Street, Baltimore, MD",
+        "phone": "(555) 345-6789",
+        "website": "https://www.smithandsonsconstruction.com",
+        "image": "smith_and_sons_logo.jpg",
+        "membership_level": "Bronze",
+        "other_information": "Family-owned construction company specializing in residential projects."
+      },
+      {
+        "name": "Green Thumb Landscaping",
+        "address": "321 Pine Street, Baltimore, MD",
+        "phone": "(555) 456-7890",
+        "website": "https://www.greenthumblandscaping.com",
+        "image": "green_thumb_logo.jpg",
+        "membership_level": "Bronze",
+        "other_information": "Offering landscaping services for residential and commercial properties."
+      },
+      {
+        "name": "TechGenius Solutions",
+        "address": "987 Maple Street, Baltimore, MD",
+        "phone": "(555) 567-8901",
+        "website": "https://www.techgeniussolutions.com",
+        "image": "techgenius_logo.jpg",
+        "membership_level": "Silver",
+        "other_information": "Provider of IT consulting and managed services for businesses of all sizes."
+      },
+      {
+        "name": "Harborview Hotel",
+        "address": "654 Harbor Drive, Baltimore, MD",
+        "phone": "(555) 678-9012",
+        "website": "https://www.harborviewhotel.com",
+        "image": "harborview_hotel.jpg",
+        "membership_level": "Gold",
+        "other_information": "Luxurious waterfront hotel offering top-notch amenities and breathtaking views."
+      },
+      {
+        "name": "Baltimore Bakery",
+        "address": "234 Baker Street, Baltimore, MD",
+        "phone": "(555) 789-0123",
+        "website": "https://www.baltimorebakery.com",
+        "image": "baltimore_bakery.jpg",
+        "membership_level": "Silver",
+        "other_information": "Specializing in artisanal bread, pastries, and custom cakes for all occasions."
+      },
+      {
+        "name": "Sunrise Pharmacy",
+        "address": "789 Sunrise Blvd, Baltimore, MD",
+        "phone": "(555) 901-2345",
+        "website": "https://www.sunrisepharmacy.com",
+        "image": "sunrise_pharmacy.jpg",
+        "membership_level": "Bronze",
+        "other_information": "Local pharmacy providing prescription medications and health products."
+      },
+      {
+        "name": "BlueSky Marketing Agency",
+        "address": "567 Skyline Avenue, Baltimore, MD",
+        "phone": "(555) 345-6789",
+        "website": "https://www.blueskymarketing.com",
+        "image": "bluesky_marketing.jpg",
+        "membership_level": "Silver",
+        "other_information": "Full-service marketing agency offering digital and traditional marketing solutions."
+      }
+     
+    ]
+  }
+  
