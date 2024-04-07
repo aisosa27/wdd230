@@ -45,7 +45,7 @@ footer {
 }
 
 /* Card Styles */
-.event-container, .weather-card, .spotlight-card {
+.event-card, .weather-card, .spotlight-card {
   background-color: #d4a373;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
